@@ -61,7 +61,7 @@ def main():
     
     hash_table = HashTable(S)
     
-    print("\n=== ОПЕРАЦІЇ З ГЕШ-ТАБЛИЦЕЮ ===")
+    print("\nОПЕРАЦІЇ З ГЕШ-ТАБЛИЦЕЮ")
     
     while True:
         print("\nОберіть операцію:")
@@ -107,7 +107,7 @@ def main():
         else:
             print("Невірний вибір. Спробуйте ще раз.")
     
-    print(f"\n=== ЗАПОВНЕННЯ {N} ВИПАДКОВИМИ ЧИСЛАМИ ===")
+    print(f"\nЗАПОВНЕННЯ {N} ВИПАДКОВИМИ ЧИСЛАМИ")
     for i in range(N):
         hash_table.insert(random.randint(1, 1000))
     
@@ -116,12 +116,12 @@ def main():
     print(f"Кількість елементів до видалення парних: {len(elements_before)}")
     hash_table.display()
     
-    print(f"\n=== ВИДАЛЕННЯ ПАРНИХ ЧИСЕЛ ===")
+    print(f"\nВИДАЛЕННЯ ПАРНИХ ЧИСЕЛ")
     removed_count = hash_table.remove_even()
     print(f"Видалено парних чисел: {removed_count}")
     
-    print(f"\n=== РЕЗУЛЬТАТ ===")
-    print(f"=== ГЕШ-ТАБЛИЦЯ БЕЗ ПАРНИХ ЧИСЕЛ ===")
+    print(f"\nРЕЗУЛЬТАТ")
+    print(f"ГЕШ-ТАБЛИЦЯ БЕЗ ПАРНИХ ЧИСЕЛ")
     hash_table.display()
 
 if __name__ == "__main__":
